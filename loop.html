@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+  <html lang="Engish">
+     <head>
+      <meta charset="UTF-8">
+       <title>Задание</title>
+     </head>
+        <body>
+            <ul id="ul"></ul>
+                 <input type="text" id="txt">
+                 <input type="button" value="Добавить в список" onclick="addlist(txt)">
+                    <script>function addlist(fromELem){
+                            let liLast = document.createElement('li');//создание элемента типа li
+                            liLast.innerHTML = fromELem.value;//Вставляем значение из поля текст
+                            ul.append(liLast); //вставляем содержимое указанное параметром в конец каждого элемента
+                            }
+            </script>
+        </body>
+</html>
